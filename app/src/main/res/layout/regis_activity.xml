@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisActivity">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/btn_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_r1"/>
+
+    <TextView
+        android:id="@+id/txt_r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_r1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_black"
+        android:text="APLIKASI KASIR"
+        android:textColor="@color/Blue"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textColor="@color/Blue"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_black"
+        android:layout_below="@id/txt_r1"
+        android:id="@+id/txt_r2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt_r2"
+        android:padding="30dp"
+        android:id="@+id/ly">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:hint="Nama"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/edt_nama"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:hint="Email"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/edt_email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:hint="Telepon"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/edt_telepon"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:hint="Password"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@drawable/button_shape"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/edt_password"/>
+
+        <EditText
+            android:id="@+id/edt_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:hint="Re-Password"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ly"
+        android:text="REGISTER"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_black"
+        android:id="@+id/btn_r1"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btn_r1"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/Gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/Blue" />
+
+    </LinearLayout>
+</RelativeLayout>
