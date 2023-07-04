@@ -1,8 +1,10 @@
 package com.example.cashierapp
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.example.cashierapp.entity.Item
 import com.example.cashierapp.entity.Sale
 import com.example.cashierapp.entity.relation.SaleWithItems
 
@@ -10,6 +12,9 @@ import com.example.cashierapp.entity.relation.SaleWithItems
 interface SaleDao {
     @Insert
     fun insertSale(sale: Sale)
+
+    @Delete
+    fun deleteSale(sale: Sale)
 
     @Query("select * from sale")
     fun getAllSales(): List<Sale>

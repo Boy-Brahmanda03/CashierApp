@@ -78,7 +78,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         app:layout_constraintTop_toBottomOf="@id/cvTotal"
-        android:id="@+id/rvListData"
+        android:id="@+id/rvListIncome"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="18dp"  />
