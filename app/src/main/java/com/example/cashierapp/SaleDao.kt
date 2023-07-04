@@ -16,4 +16,7 @@ interface SaleDao {
 
     @Query("SELECT * FROM sale")
     fun getSaleWithItems(): List<SaleWithItems>
+
+    @Query("SELECT SUM(total) FROM Sale")
+    fun getSum(): Int
 }
