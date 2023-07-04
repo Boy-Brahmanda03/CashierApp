@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CashierApp</string>
+    <string name="pemasukan">Pemasukan</string>
+    <string name="laporan">LAPORAN</string>
+    <string name="todo">TODO</string>
+    <string name="pengeluaran">Pengeluaran</string>
 </resources>

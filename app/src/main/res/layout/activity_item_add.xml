@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemAddActivity">
+
+    <LinearLayout
+        android:elevation="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <ImageView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/baseline_arrow_back_ios_new_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAMBAH BARANG"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="35dp"
+            android:textSize="30sp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/title_iv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rectangle_1"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/namabarang_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:inputType="text"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:hint="Nama Barang"
+        android:background="@drawable/rectangle_2"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_iv" />
+
+    <EditText
+        android:id="@+id/stokbarang_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:hint="Stok Barang"
+        android:background="@drawable/rectangle_2"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namabarang_et" />
+
+    <EditText
+        android:id="@+id/hargabarang_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:inputType="text"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:hint="Harga Barang"
+        android:background="@drawable/rectangle_2"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stokbarang_et" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="10dp"
+        android:text="SIMPAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
