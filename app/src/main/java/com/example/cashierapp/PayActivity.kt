@@ -33,22 +33,5 @@ class PayActivity : AppCompatActivity() {
                 finish()
             }
         }
-
-
-//        val payss = pays.toLong()
-//
-//        if (payss >= total ){
-//            val change = pays.toLong() - total
-//            val btn = findViewById<Button>(R.id.add_btn)
-//            btn.setOnClickListener {
-//                val intent = Intent(this,FinishTransaksi::class.java)
-//                intent.putExtra("change", change)
-//                startActivity(intent)
-//                finish()
-//            }
-//        } else {
-//            Log.println(Log.INFO, "TEST", "$payss $pays")
-//        }
-
     }
 }

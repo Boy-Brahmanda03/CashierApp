@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import com.example.cashierapp.entity.AppDatabase
 
 class FinishTransaksi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
