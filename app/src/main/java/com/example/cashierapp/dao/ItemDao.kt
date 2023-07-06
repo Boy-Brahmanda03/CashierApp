@@ -1,4 +1,4 @@
-package com.example.cashierapp
+package com.example.cashierapp.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -27,4 +27,10 @@ interface ItemDao {
 
     @Query("SELECT * FROM item")
     fun getItemWithSales(): List<ItemWithSales>
+
+    @Query("SELECT itemName from Item")
+    fun getItemName(): List<String>
+
+    @Query("SELECT * from item where itemName like :name")
+    fun getItem(name: String): Item
 }

@@ -4,12 +4,12 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.cashierapp.ItemDao
-import com.example.cashierapp.SaleDao
-import com.example.cashierapp.UserDao
+import com.example.cashierapp.dao.ItemDao
+import com.example.cashierapp.dao.SaleDao
+import com.example.cashierapp.dao.UserDao
 
 @Database(
-    entities = [Item::class, Sale::class, User::class, SaleItemCrossRef::class],
+    entities = [Item::class, Sale::class, User::class, SaleItemCrossRef::class, BuyItems::class],
     version = 1,
     exportSchema = false
 )

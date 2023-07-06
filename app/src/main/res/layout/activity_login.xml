@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login"
     tools:context=".LoginActivity">
 
     <TextView
@@ -11,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/poppins_black"
         android:text="APLIKASI KASIR"
         android:textColor="@color/primary_color"
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_below="@id/txt_l2"
+        android:layout_marginTop="100dp"
         android:padding="30dp"
         android:id="@+id/lyl">
 
@@ -87,7 +89,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/btn_l1"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="60dp"
         android:gravity="center_horizontal">
 
         <TextView

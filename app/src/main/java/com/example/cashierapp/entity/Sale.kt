@@ -9,5 +9,5 @@ data class Sale(
     val saleID: Int,
     val userCreatorID: Int,
     val date: String,
-    val total: Long
+    var total: Long = 0
 )

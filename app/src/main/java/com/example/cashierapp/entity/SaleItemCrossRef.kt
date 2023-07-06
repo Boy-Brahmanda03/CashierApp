@@ -3,10 +3,10 @@ package com.example.cashierapp.entity
 import androidx.room.Entity
 
 
-@Entity(primaryKeys = ["userID", "itemID"])
+@Entity(primaryKeys = ["saleID", "itemID"])
 data class SaleItemCrossRef(
-    val userID: Int,
+    val saleID: Int,
     val itemID: Int,
-    val quantity: Int,
-    val subTotal: Long
+    var quantity: Int = 1,
+    var subTotal: Long = 0
 )

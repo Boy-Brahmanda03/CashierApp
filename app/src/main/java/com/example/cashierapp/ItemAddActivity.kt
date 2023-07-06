@@ -38,12 +38,14 @@ class ItemAddActivity : AppCompatActivity() {
                 db.itemDao().insertItem(item)
                 val intent = Intent(this, ItemActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
 
         btnBack.setOnClickListener {
             val intent = Intent(this, ItemActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

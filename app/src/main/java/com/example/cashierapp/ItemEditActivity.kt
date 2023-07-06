@@ -26,6 +26,7 @@ class ItemEditActivity : AppCompatActivity() {
         val name = intent.getStringExtra("nama").toString()
         val stok = intent.getStringExtra("stok")
         val price = intent.getStringExtra("harga")
+
         etNameItem.setText(name)
         etPriceItem.setText(price)
         etStockItem.setText(stok)

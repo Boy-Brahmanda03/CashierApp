@@ -1,11 +1,9 @@
-package com.example.cashierapp
+package com.example.cashierapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.cashierapp.databinding.ItemsListBinding
 import com.example.cashierapp.databinding.ListItemDataBinding
-import com.example.cashierapp.entity.Item
 import com.example.cashierapp.entity.Sale
 
 class ListAdapter(

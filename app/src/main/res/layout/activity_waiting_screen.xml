@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaitingScreenActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_black"
+        android:text="CASHIER"
+        android:textSize="30sp"
+        android:textColor="@color/primary_color"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_splash_first"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/txt_splash_first"
+        android:src="@drawable/logo_waiting"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/circle_img_second"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circle_img_second"
+        android:id="@+id/txt_splash_second"
+        android:text="Selamat datang di Cashier"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:id="@+id/txt_splash_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_splash_second"
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Penghitunagn, pembelian, dan laporan lebih mudah dengan Aplikasi Cashier"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_splash_three"
+        android:text="NEXT"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/primary_color"
+        android:fontFamily="@font/poppins_black"
+        android:textColor="@color/white"
+        android:id="@+id/btn_secsplash"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

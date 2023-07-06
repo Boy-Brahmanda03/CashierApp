@@ -37,11 +37,13 @@ class RegisterActivity : AppCompatActivity() {
                 val user = User(0, name, email, telepon, repass)
                 db.insertUser(user)
                 Toast.makeText(this, "Berhasil", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+                finish()
             } else {
                 Toast.makeText(this, "Gagal", Toast.LENGTH_SHORT).show()
             }
         }
-
         tvLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)

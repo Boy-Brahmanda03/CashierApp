@@ -1,4 +1,4 @@
-package com.example.cashierapp
+package com.example.cashierapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

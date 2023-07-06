@@ -130,12 +130,24 @@
 
   <Button
       android:id="@+id/add_btn"
-      android:layout_width="match_parent"
+      android:layout_width="200dp"
       android:layout_height="55dp"
-      android:layout_margin="10dp"
-      android:text="SIMPAN"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      android:text="TAMBAH"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/save_btn"
       app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="10dp"
+        android:text="SIMPAN"
+        android:backgroundTint="#6CB765"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/add_btn" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>

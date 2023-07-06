@@ -23,36 +23,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
+                android:fontFamily="@font/poppins_bold"
                 android:text="0001"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvTotal"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:textColor="@color/black"
-                android:text="total rupiah"
-                android:textSize="14sp" />
+                android:fontFamily="@font/poppins"
+                android:text="TOTAL RUPIAH"
+                android:textSize="20sp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvDate"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:textColor="@color/primary_color"
+                android:fontFamily="@font/poppins_bold"
                 android:text="21 June 2023"
-                android:textSize="12sp" />
+                android:textColor="@color/primary_color"
+                android:textSize="20sp" />
 
         </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/ivDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            app:srcCompat="@drawable/ic_delete" />
 
     </RelativeLayout>
 

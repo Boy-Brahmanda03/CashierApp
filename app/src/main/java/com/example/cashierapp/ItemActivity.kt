@@ -5,12 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
+import com.example.cashierapp.adapter.ItemAdapter
 import com.example.cashierapp.entity.AppDatabase
-import com.example.cashierapp.entity.Item
 
 class ItemActivity : AppCompatActivity() {
     private lateinit var btnAdd: Button
